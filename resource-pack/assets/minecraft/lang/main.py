@@ -84,8 +84,8 @@ def main(lang="en_us"):
         ["Jersey 10,txt size 4pt", "game.DiceyDescentName", "game.ZombieTagName", "game.BarrelDaredevilName", "game.BackAttackName", "game.LuckyLaunchName"],
         ["game.ChopChopsName", "game.PopgunPosseName", "game.FlagFracasName", "game.TropicalPunchName", "game.FriendlyFaceOffName", "game.GoalGettersName"],
         ["game.RiskyRailwayName", "game.MazeDazeName", "game.HammerHeadsName", "game.StopWatchersName", "game.StrategyStepsName", "game.FaceFlipName"],
-        ["game.ShutterpupName", "game.WalkOffName", "game.DerbyDashName", "", "", ""],
-        ["", "", "", "", "", ""]
+        ["game.ShutterpupName", "game.WalkOffName", "game.DerbyDashName", "game.FeatheredFrenzyName", "game.PearlPlunderName", "game.ChinUpChampName"],
+        ["game.RamJamName", "game.SmileSnapName", "", "", "", ""]
     ]
 
     img_width, img_height = 840, 100

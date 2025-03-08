@@ -22,8 +22,8 @@ function games:29/play_song
 
 scoreboard players set timer= 29scores 0
 
-execute as @e[type=item_display,tag=29clam] run tag @s add 29open
-execute as @e[type=item_display,tag=29clam] run data modify entity @s item.components."minecraft:custom_model_data" set value 29002
-execute as @e[type=item_display,tag=29clam] at @s run function games:29/clam_wait
+execute as @e[type=marker,tag=29clam] run tag @s add 29open
+execute as @e[type=marker,tag=29clam] at @s as @n[type=item_display,tag=29clam,tag=top] run function games:29/animation_open
+execute as @e[type=marker,tag=29clam] at @s run function games:29/clam_wait
 
 function games:29/spawn_jellyfish

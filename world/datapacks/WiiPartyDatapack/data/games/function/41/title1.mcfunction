@@ -24,4 +24,4 @@ scoreboard players set $z player_motion.api.launch 0
 
 execute as @a[tag=ingame] run function player_motion:api/launch_xyz
 
-schedule function games:41/move_stand 8t
+schedule function games:41/move_stand 6t

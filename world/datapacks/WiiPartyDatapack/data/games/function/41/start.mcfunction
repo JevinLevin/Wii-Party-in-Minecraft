@@ -106,3 +106,4 @@ function games:41/spawn_timer
 schedule function games:41/spawn_stand 5t
 
 execute as @a[tag=ingame] run attribute @s generic.jump_strength base set 0
+execute as @a[tag=ingame] run attribute @s generic.gravity base set 0.01

@@ -1,10 +1,10 @@
-tag @e[type=item_display,tag=29clam,tag=29open,dx=1,dy=1,dz=1] add 29target
+tag @e[type=marker,tag=29clam,tag=29open,dx=1,dy=1,dz=1] add 29target
 
-tag @e[type=item_display,tag=29target] remove 29open
+tag @e[type=marker,tag=29target] remove 29open
 
-data modify entity @n[type=item_display,tag=29target] item.components."minecraft:custom_model_data" set value 29001
+execute at @s as @n[type=item_display,tag=29clam,tag=top] run function games:29/animation_close
 
-execute as @e[type=item_display,tag=29target] run function games:29/clam_wait
+execute as @e[type=marker,tag=29target] run function games:29/clam_wait
 
 scoreboard players add @s 29score 1
 

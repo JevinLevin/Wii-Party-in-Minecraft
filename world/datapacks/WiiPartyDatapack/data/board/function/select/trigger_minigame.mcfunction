@@ -18,5 +18,10 @@ execute if score final= minigameSelect matches 17 run schedule function games:24
 execute if score final= minigameSelect matches 18 run schedule function games:48/start 4s
 execute if score final= minigameSelect matches 19 run schedule function games:16/start 4s
 execute if score final= minigameSelect matches 20 run schedule function games:35/start 4s
+execute if score final= minigameSelect matches 21 run schedule function games:19/start 4s
+execute if score final= minigameSelect matches 22 run schedule function games:29/start 4s
+execute if score final= minigameSelect matches 23 run schedule function games:41/start 4s
+execute if score final= minigameSelect matches 24 run schedule function games:15/start 4s
+execute if score final= minigameSelect matches 25 run schedule function games:21/start 4s
 
 schedule function board:select/set_day 79t

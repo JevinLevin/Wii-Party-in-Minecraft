@@ -1,13 +1,15 @@
-kill @e[type=item_display,tag=29clam]
+kill @e[tag=29clam]
 
-summon item_display 28011 22 27990 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}},Rotation:[0f,0f]}
-summon item_display 28006 15 27990 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}}}
-summon item_display 28009 10 28000 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}},Rotation:[90f,0f]}
-summon item_display 28000 9 28000 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}},Rotation:[90f,0f]}
-summon item_display 27991 10 27992 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}}}
-summon item_display 27995 18 27990 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}},Rotation:[-90f,0f]}
-summon item_display 27984 20 28005 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}},Rotation:[-90f,0f]}
-summon item_display 27982 12 28003 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}},Rotation:[180f,0f]}
-summon item_display 27995 13 28013 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}},Rotation:[180f,0f]}
-summon item_display 28003 23 28019 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}},Rotation:[180f,0f]}
-summon item_display 28009 16 28008 {Tags:["29clam"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":29001}},Rotation:[180f,0f]}
+summon marker 28011 22 27990 {Tags:["29clam"],Rotation:[0f,0f]}
+summon marker 28006 15 27990 {Tags:["29clam"]}
+summon marker 28009 10 28000 {Tags:["29clam"],Rotation:[90f,0f]}
+summon marker 28000 9 28000 {Tags:["29clam"],Rotation:[90f,0f]}
+summon marker 27991 10 27992 {Tags:["29clam"]}
+summon marker 27995 18 27990 {Tags:["29clam"],Rotation:[-90f,0f]}
+summon marker 27984 20 28005 {Tags:["29clam"],Rotation:[-90f,0f]}
+summon marker 27982 12 28003 {Tags:["29clam"],Rotation:[180f,0f]}
+summon marker 27995 13 28013 {Tags:["29clam"],Rotation:[180f,0f]}
+summon marker 28003 23 28019 {Tags:["29clam"],Rotation:[180f,0f]}
+summon marker 28009 16 28008 {Tags:["29clam"],Rotation:[180f,0f]}
+
+execute as @e[type=marker,tag=29clam] at @s rotated as @s run function games:29/spawn_model

@@ -16,7 +16,8 @@ tag @a remove 29stunned
 tag @a remove 29recover
 
 # Kills all entities
-kill @e[type=item_display,tag=29clam]
+kill @e[tag=29clam]
+tp @e[type=drowned,tag=29jellyfish] 0 -250 0
 kill @e[type=drowned,tag=29jellyfish]
 kill @e[type=marker,tag=29stun]
 

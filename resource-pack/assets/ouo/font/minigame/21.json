@@ -1,0 +1,63 @@
+{
+    "providers": [
+        {
+            "type": "space",
+            "advances": {
+                "\ue100": 0,
+
+                "\ue101": 1,"\ue102": 2,"\ue103": 3,"\ue104": 4,"\ue105": 5,
+                "\ue106": 6,"\ue107": 7,"\ue108": 8,"\ue109": 9,"\ue10a": 10,
+                "\ue10b": 20,"\ue10c": 30,"\ue10d": 50,"\ue10e": 100,
+                "\ue10f": 200,"\ue110": 300,"\ue111": 500,"\ue112": 1000,
+
+                "\ue201": -1,"\ue202": -2,"\ue203": -3,"\ue204": -4,"\ue205": -5,
+                "\ue206": -6,"\ue207": -7,"\ue208": -8,"\ue209": -9,"\ue20a": -10,
+                "\ue20b": -20,"\ue20c": -30,"\ue20d": -50,"\ue20e": -100,
+                "\ue20f": -200,"\ue210": -300,"\ue211": -500,"\ue212": -1000,
+
+                ".": -1,
+                "-": -29
+            }
+        },
+        {
+            "type": "bitmap",
+            "file": "ouo:font/minigame/21.png",
+            "height": 8,
+            "ascent": -3,
+            "chars": [
+                "12",
+                "\u0000\u0000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "ouo:font/minigame/21.png",
+            "height": 8,
+            "ascent": -11,
+            "chars": [
+                "\u0000\u0000",
+                "34"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "ouo:font/minigame/21.png",
+            "height": 8,
+            "ascent": -2,
+            "chars": [
+                "56",
+                "\u0000\u0000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "ouo:font/minigame/21.png",
+            "height": 8,
+            "ascent": -10,
+            "chars": [
+                "\u0000\u0000",
+                "78"
+            ]
+        }
+    ]
+}
