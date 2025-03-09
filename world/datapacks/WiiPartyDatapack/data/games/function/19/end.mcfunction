@@ -25,6 +25,7 @@ schedule clear games:19/start_title
 schedule clear games:19/begin
 schedule clear games:19/end
 schedule clear games:19/play_song
+schedule clear games:19/play_intro
 
 # Gets rid of all the bossbars
 bossbar set minecraft:19bluetimer visible false

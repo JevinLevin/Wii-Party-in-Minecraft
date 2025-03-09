@@ -156,6 +156,7 @@
 		{"predicate": {"custom_model_data": 29002},"model": "ouo:o/pearl_plunder/clam_open"},
 		{"predicate": {"custom_model_data": 29003},"model": "ouo:o/pearl_plunder/clam_top"},
 		{"predicate": {"custom_model_data": 29004},"model": "ouo:o/pearl_plunder/clam_bottom"},
+		{"predicate": {"custom_model_data": 29005},"model": "ouo:o/pearl_plunder/pearl"},
 
 
 		{"predicate": {"custom_model_data": 35000},"model": "ouo:o/strategy_steps/pad"},

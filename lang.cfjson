@@ -171,9 +171,9 @@
     @clear
     "lobby.Island.Visit":"Explore Island",
     "lobby.Island.Guide1":"Welcome to the island!",
-    "lobby.Island.Guide2":"Use @T;?command.islandReturn@ to return to the island",
-    "lobby.Island.Guide3":"Use @T;?command.islandSpectate@ to toggle gamemode spectator",
-    "lobby.Island.Actionbar":"Use @T;?command.islandReturn@ to return",
+    "lobby.Island.Guide2":"Use @SI;%s#command.islandReturn@ to return to the island",
+    "lobby.Island.Guide3":"Use @SI;%s#command.islandSpectate@ to toggle gamemode spectator",
+    "lobby.Island.Actionbar":"Use @SI;%s#command.islandReturn@ to return",
     
     # Minigame Visiting
     "lobby.Minigames.Visit":"Explore Minigames",

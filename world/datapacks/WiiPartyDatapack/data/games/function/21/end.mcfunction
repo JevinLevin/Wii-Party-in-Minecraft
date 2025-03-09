@@ -31,7 +31,7 @@ scoreboard objectives setdisplay sidebar
 schedule clear games:21/start_title
 schedule clear games:21/begin
 schedule clear games:21/end
-schedule clear games:21/play_song
+schedule clear games:21/play_intro
 
 # Gets rid of all the bossbars
 bossbar set minecraft:21bluetimer visible false

@@ -29,6 +29,7 @@ schedule clear games:15/start_title
 schedule clear games:15/begin
 schedule clear games:15/end
 schedule clear games:15/play_song
+schedule clear games:15/play_intro
 
 clear @a[tag=ingame] wheat
 

@@ -18,3 +18,7 @@ execute as @a[tag=playing] at @s run playsound minecraft:block.note_block.banjo 
 # Schedules the start of the game in 2 seconds
 schedule function games:15/begin 2s
 
+tp @a[tag=ingame,team=blue] 15944 20 16001.0
+tp @a[tag=ingame,team=red] 15944 20 16002.0
+tp @a[tag=ingame,team=green] 15944 20 16003.0
+tp @a[tag=ingame,team=orange] 15944 20 16004.0

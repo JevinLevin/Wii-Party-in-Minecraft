@@ -18,6 +18,4 @@ scoreboard players set ingame= 21scores 2
 
 title @a[tag=playing] times 0 10 20
 
-function games:21/play_song
-
 scoreboard players set timer= 21scores 0

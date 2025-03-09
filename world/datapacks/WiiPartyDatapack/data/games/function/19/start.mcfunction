@@ -60,7 +60,7 @@ function games:19/display
 # Removes all tags
 
 
-schedule function games:19/play_intro 16t
+schedule function games:19/play_intro 48t
 
 # Bossbar
 bossbar add 19bluetimer {"translate":"game.WalkOff.Time","color":"#0088ff","bold":true}

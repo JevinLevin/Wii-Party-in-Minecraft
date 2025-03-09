@@ -225,6 +225,33 @@
 		],
 		"category": "voice"
 	},
+	"chin_up_champs_loop_1097": {
+		"sounds": [
+			{
+				"name": "music:songs/chin_up_champs_loop_1097",
+				"stream": true
+			}
+		],
+		"category": "voice"
+	},
+	"feathered_frenzy_loop_731": {
+		"sounds": [
+			{
+				"name": "music:songs/feathered_frenzy_loop_731",
+				"stream": true
+			}
+		],
+		"category": "voice"
+	},
+	"pearl_plunder_loop_320": {
+		"sounds": [
+			{
+				"name": "music:songs/pearl_plunder_loop_320",
+				"stream": true
+			}
+		],
+		"category": "voice"
+	},
 
 
 
@@ -386,6 +413,24 @@
 		"sounds": [
 			{
 				"name": "music:intros/zombie_tag_111",
+				"stream": true
+			}
+		],
+		"category": "voice"
+	},
+	"feathered_frenzy_92": {
+		"sounds": [
+			{
+				"name": "music:intros/feathered_frenzy_92",
+				"stream": true
+			}
+		],
+		"category": "voice"
+	},
+	"pearl_plunder_84": {
+		"sounds": [
+			{
+				"name": "music:intros/pearl_plunder_84",
 				"stream": true
 			}
 		],

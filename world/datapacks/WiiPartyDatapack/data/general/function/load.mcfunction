@@ -52,6 +52,8 @@ forceload add 19148 19145 19167 19164
 forceload add 22927 22986 22921 22984
 # Risky Railway wall
 forceload add 24010 23988
+# Ram Jam
+forceload add 16020 16001 15952 16001
 
 team add colorAqua
 team modify colorAqua color aqua

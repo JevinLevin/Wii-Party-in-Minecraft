@@ -1,4 +1,4 @@
-execute store result score random= minigameSelect run random value 1..20
+execute store result score random= minigameSelect run random value 1..25
 
 scoreboard players set valid= minigameSelect 1
 execute if score random= minigameSelect = game1= minigameSelect run scoreboard players set valid= minigameSelect 0
