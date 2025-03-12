@@ -107,6 +107,8 @@
 "lobby.GameStarting": "Game Starting",
 "lobby.MinigameStarting": "Minigame Starting",
 "lobby.Cancelled": "Cancelled",
+"command.islandReturn": "\/trigger islandReturn",
+"command.islandSpectate": "\/trigger islandSpectate",
 "lobby.Island.Visit": "Explore Island",
 "lobby.Island.Guide1": "Welcome to the island!",
 "lobby.Island.Guide2": "Use %s to return to the island",
