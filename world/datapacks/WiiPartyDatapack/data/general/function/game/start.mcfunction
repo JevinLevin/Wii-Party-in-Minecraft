@@ -18,7 +18,7 @@ tag @a remove islandVisit
 tag @a remove selectChoose
 tag @a remove inactive
 
-scoreboard players set round= game 11
+scoreboard players set round= game 1
 scoreboard players set testing options 0
 scoreboard players set @a boardPos 0
 scoreboard players set @a newBoardPos 0
@@ -85,3 +85,7 @@ scoreboard players set @a islandReturn 0
 scoreboard objectives add gameID dummy
 scoreboard players add value= gameID 1
 scoreboard players operation @a[tag=ingame] gameID = value= gameID
+
+tag @a remove arg
+
+clear @a

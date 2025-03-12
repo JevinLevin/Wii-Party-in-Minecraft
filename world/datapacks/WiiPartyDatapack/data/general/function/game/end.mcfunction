@@ -218,3 +218,5 @@ scoreboard players set @a islandReturn 0
 fill -196 58 49 -194 64 49 air
 
 time set noon
+
+tag @a remove arg

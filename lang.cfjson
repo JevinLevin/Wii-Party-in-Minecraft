@@ -166,8 +166,8 @@
 
     # Island Visiting
     @skip
-    "?command.islandReturn":"/trigger islandReturn",
-    "?command.islandSpectate":"/trigger islandSpectate",
+    "command.islandReturn":"/trigger islandReturn",
+    "command.islandSpectate":"/trigger islandSpectate",
     @clear
     "lobby.Island.Visit":"Explore Island",
     "lobby.Island.Guide1":"Welcome to the island!",

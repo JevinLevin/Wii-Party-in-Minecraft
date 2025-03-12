@@ -8,8 +8,8 @@ execute as @a[tag=playing] at @s run playsound minecraft:entity.wither.spawn mas
 
 scoreboard players set dino= tiles 2
 
-execute if score bad= tiles matches 1 run summon ravager -204 25 120 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Rotation:[180F,0F],Tags:["dino"]}
-execute if score bad= tiles matches 2 run summon ravager -95.84 14.94 33.54 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Rotation:[1535.36F,-10.45F],Tags:["dino"]}
+execute if score bad= tiles matches 1 run summon hoglin -204 25 120 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Rotation:[180F,0F],Tags:["dino"]}
+execute if score bad= tiles matches 2 run summon hoglin -95.84 14.94 33.54 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Rotation:[1535.36F,-10.45F],Tags:["dino"]}
 
 effect give @a[tag=turn] minecraft:speed infinite 9 true
 

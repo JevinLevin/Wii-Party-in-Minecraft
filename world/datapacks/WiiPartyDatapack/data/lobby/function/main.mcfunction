@@ -130,6 +130,38 @@ execute unless score playing= lobby matches 1.. as @a[scores={lobby_song=3400..}
 # Clear people stealin books
 execute unless score playing= lobby matches 1.. run clear @a enchanted_book
 
+# Stop sheep escaping
+# execute as @e[type=sheep,x=-594,y=12,z=545,dx=30,dy=10,dz=30] run tp @s 0 -300 0
+
+# Minis ARG
+execute if block -597 15 546 minecraft:stone_button[face=floor,facing=north,powered=true] run fill -606 13 547 -606 12 547 air destroy
+execute if block -597 15 546 minecraft:stone_button[face=floor,facing=north,powered=true] run schedule function lobby:arg/start_close 2s
+execute if block -597 15 546 minecraft:stone_button[face=floor,facing=north,powered=true] run setblock -597 15 546 minecraft:stone_button[face=floor,facing=north,powered=false]
+# Sheep
+execute positioned -614 13 560 as @a[distance=..1,tag=arg] if block -611 17 560 gray_stained_glass run fill -611 17 560 -611 13 564 air destroy
+execute at @e[type=minecraft:item] if entity @p[tag=arg] run data merge entity @e[type=item,limit=1,sort=nearest] {PickupDelay:0s}
+execute positioned -546 9 517 store result score sheep= lobby if entity @e[dx=1,dy=0,dz=1,type=sheep,nbt={CustomName:'"Lurelei"'}]
+execute positioned -546 9 517 if score sheep= lobby matches 1.. run tp @e[dx=1,dy=1,dz=1,type=sheep] 0 -200 0
+execute positioned -546 9 517 if score sheep= lobby matches 1.. run kill @e[dx=1,dy=1,dz=1,type=sheep]
+execute positioned -546 9 517 if score sheep= lobby matches 1.. run clear @a[tag=arg] wheat
+execute positioned -546 9 517 if score sheep= lobby matches 1.. run give @a[tag=arg] spyglass
+execute positioned -546 9 517 if score sheep= lobby matches 1.. as @a[tag=arg] at @s run playsound block.note_block.pling master @s
+# Ending
+execute if block -582 12 523 dispenser{Items:[{Slot:0b,id:"minecraft:heart_of_the_sea",count:1}]} run function lobby:arg/win
+execute if block -582 12 523 dispenser{Items:[{Slot:1b,id:"minecraft:heart_of_the_sea",count:1}]} run function lobby:arg/win
+execute if block -582 12 523 dispenser{Items:[{Slot:2b,id:"minecraft:heart_of_the_sea",count:1}]} run function lobby:arg/win
+execute if block -582 12 523 dispenser{Items:[{Slot:3b,id:"minecraft:heart_of_the_sea",count:1}]} run function lobby:arg/win
+execute if block -582 12 523 dispenser{Items:[{Slot:4b,id:"minecraft:heart_of_the_sea",count:1}]} run function lobby:arg/win
+execute if block -582 12 523 dispenser{Items:[{Slot:5b,id:"minecraft:heart_of_the_sea",count:1}]} run function lobby:arg/win
+execute if block -582 12 523 dispenser{Items:[{Slot:6b,id:"minecraft:heart_of_the_sea",count:1}]} run function lobby:arg/win
+execute if block -582 12 523 dispenser{Items:[{Slot:7b,id:"minecraft:heart_of_the_sea",count:1}]} run function lobby:arg/win
+execute if block -582 12 523 dispenser{Items:[{Slot:8b,id:"minecraft:heart_of_the_sea",count:1}]} run function lobby:arg/win
+# Bars
+execute positioned -577 12 502 if block ~ ~ ~ iron_bars if entity @a[tag=arg,distance=..2.5] run setblock -577 12 502 air destroy
+execute positioned -577 12 502 if block ~ ~ ~ air unless entity @a[tag=arg,distance=..2.5] run setblock -577 12 502 iron_bars[east=false,north=true,south=false,waterlogged=false,west=true]
+scoreboard players add fuck= lobby 1
+execute if score fuck= lobby matches 2.. run scoreboard players set fuck= lobby 0
+execute if score fuck= lobby matches 0 positioned -565 16 539 run tp @e[type=boat,tag=lobbyBoat,distance=1..,nbt=!{Passengers:[]}] ~ ~ ~ 0 0
 
 # Particles
 # Portal

@@ -1,0 +1,1 @@
+place template games:chin_up_champs -610 9 545

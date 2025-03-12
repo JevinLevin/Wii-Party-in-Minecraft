@@ -1,0 +1,1 @@
+place template games:smile_snap -618 11 548

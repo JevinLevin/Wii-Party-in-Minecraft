@@ -3,6 +3,7 @@ import json
 import os
 import re
 
+
 def apply_threshold_and_outline(image, threshold=128):
     image = image.convert("RGBA")
     width, height = image.size
@@ -10,15 +11,18 @@ def apply_threshold_and_outline(image, threshold=128):
 
     for y in range(height):
         for x in range(width):
-            pix[x, y] = (0, 0, 0, 0) if pix[x, y][3] < threshold else (255, 255, 255, 255)
+            pix[x, y] = (0, 0, 0, 0) if pix[x, y][3] < threshold else (
+                255, 255, 255, 255)
 
-    outline = Image.new("RGBA", (width, height), (0, 0, 0, 0))
-    shifts = [(-1, 0), (1, 0), (0, -1), (0, 1), (0, 2), (-1, -1), (1, -1), (-1, 1), (1, 1),(-1, 2), (1, 2)]
+    outline = Image.new("RGBA", (width, height), (0, 0, 0, 1))
+    shifts = [(-1, 0), (1, 0), (0, -1), (0, 1), (0, 2), (-1, -1),
+              (1, -1), (-1, 1), (1, 1), (-1, 2), (1, 2)]
     for dx, dy in shifts:
         shifted = image.copy().crop((0, 0, width, height))
         outline.paste((0, 0, 0, 255), (dx, dy), shifted)
 
     return Image.alpha_composite(outline, image)
+
 
 def wrap_text(text, font, box_width, draw):
     words = text.split()
@@ -37,6 +41,7 @@ def wrap_text(text, font, box_width, draw):
         lines.append(current_line)
     return lines
 
+
 def get_largest_font_size_that_fits(draw, text, box_width, box_height, font_path, max_font_size=20, min_font_size=1):
     if text == "":
         return min_font_size
@@ -47,19 +52,22 @@ def get_largest_font_size_that_fits(draw, text, box_width, box_height, font_path
         line_height = ascent + descent
         total_text_height = line_height * len(lines)
         max_line_width = max(
-            (draw.textbbox((0, 0), line, font=font)[2] - draw.textbbox((0, 0), line, font=font)[0]) 
+            (draw.textbbox((0, 0), line, font=font)[
+             2] - draw.textbbox((0, 0), line, font=font)[0])
             for line in lines
         )
         if max_line_width <= box_width and total_text_height <= box_height:
             return size
     return min_font_size
 
+
 def draw_text_in_box(draw, text, box, font_path):
     left, top, right, bottom = box
     box_width = right - left
     box_height = bottom - top
 
-    font_size = get_largest_font_size_that_fits(draw, text, box_width, box_height, font_path)
+    font_size = get_largest_font_size_that_fits(
+        draw, text, box_width, box_height, font_path)
     font = ImageFont.truetype(font_path, font_size)
     lines = wrap_text(text, font, box_width, draw)
     ascent, descent = font.getmetrics()
@@ -72,6 +80,7 @@ def draw_text_in_box(draw, text, box, font_path):
         x = left + (box_width - line_width) // 2
         draw.text((x, current_y), line, font=font, fill=(255, 255, 255, 255))
         current_y += line_height
+
 
 def main(lang="en_us"):
     with open(f"{lang}.json", "r") as f:
@@ -91,7 +100,7 @@ def main(lang="en_us"):
     img_width, img_height = 840, 100
     image = Image.new("RGBA", (img_width, img_height), (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
-    
+
     font_path = "Jersey10-Regular.ttf"
     row_height = 20
     horizontal_spacing = 5
@@ -102,7 +111,7 @@ def main(lang="en_us"):
         total_spacing = horizontal_spacing * (count - 1)
         col_width = (img_width - total_spacing) / count
         current_left = 0
-        
+
         for key in row:
             box = (
                 int(current_left),
@@ -119,18 +128,23 @@ def main(lang="en_us"):
     image.save(filename)
     print(f"Saved {filename}")
 
+
 def find_json_languages():
-    lang_files = [f for f in os.listdir() if re.match(r"([a-z]{2}_[a-z]{2})\.json$", f)]
+    lang_files = [f for f in os.listdir() if re.match(
+        r"([a-z]{2}_[a-z]{2})\.json$", f)]
     return [os.path.splitext(f)[0] for f in lang_files]
+
 
 def process_all_languages():
     languages = find_json_languages()
     for lang in languages:
-        print(f"Processing language: {lang}")
         try:
+            print(f"Processing language: {lang}")
             main(lang)
         except:
-            print(f"Language failed to process: {lang}")
+            print(f"Failed to process language: {lang}")
+
 
 if __name__ == "__main__":
     process_all_languages()
+
