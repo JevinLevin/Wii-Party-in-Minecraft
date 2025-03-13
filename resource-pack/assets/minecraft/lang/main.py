@@ -86,11 +86,11 @@ def main(lang="en_us"):
     with open(f"{lang}.json", "r") as f:
         strings = json.load(f)
 
-    strings["Jersey 10,txt size 4pt"] = "Jersey 10,txt size 4pt"
+    strings["NotoSansSC-VariableFont_wght"] = "NotoSansSC-VariableFont_wght"
     strings[""] = ""
 
     rows = [
-        ["Jersey 10,txt size 4pt", "game.DiceyDescentName", "game.ZombieTagName", "game.BarrelDaredevilName", "game.BackAttackName", "game.LuckyLaunchName"],
+        ["NotoSansSC-VariableFont_wght", "game.DiceyDescentName", "game.ZombieTagName", "game.BarrelDaredevilName", "game.BackAttackName", "game.LuckyLaunchName"],
         ["game.ChopChopsName", "game.PopgunPosseName", "game.FlagFracasName", "game.TropicalPunchName", "game.FriendlyFaceOffName", "game.GoalGettersName"],
         ["game.RiskyRailwayName", "game.MazeDazeName", "game.HammerHeadsName", "game.StopWatchersName", "game.StrategyStepsName", "game.FaceFlipName"],
         ["game.ShutterpupName", "game.WalkOffName", "game.DerbyDashName", "game.FeatheredFrenzyName", "game.PearlPlunderName", "game.ChinUpChampName"],
@@ -101,7 +101,7 @@ def main(lang="en_us"):
     image = Image.new("RGBA", (img_width, img_height), (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
 
-    font_path = "Jersey10-Regular.ttf"
+    font_path = "NotoSansSC-VariableFont_wght.ttf"
     row_height = 20
     horizontal_spacing = 5
 

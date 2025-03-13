@@ -31,10 +31,10 @@ tellraw @a[tag=playing] ""
 
 # Teleport all players to the correct position
     # Players
-tp @a[team=blue] 3006 13.5 2982
-tp @a[team=red] 3002 13.5 2982
-tp @a[team=green] 2998 13.5 2982
-tp @a[team=orange] 2994 13.5 2982
+tp @a[team=blue] 3006 13.5 2982 0 0
+tp @a[team=red] 3002 13.5 2982 0 0
+tp @a[team=green] 2998 13.5 2982 0 0
+tp @a[team=orange] 2994 13.5 2982 0 0
     # Spectators
 spreadplayers 3000 2993 10 10 under 13 true @a[tag=playing,tag=!ingame]
 execute as @a[tag=playing,tag=!ingame] at @s run tp @s ~ ~2 ~

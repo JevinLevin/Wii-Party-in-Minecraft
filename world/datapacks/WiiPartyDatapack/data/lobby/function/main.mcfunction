@@ -161,7 +161,8 @@ execute positioned -577 12 502 if block ~ ~ ~ iron_bars if entity @a[tag=arg,dis
 execute positioned -577 12 502 if block ~ ~ ~ air unless entity @a[tag=arg,distance=..2.5] run setblock -577 12 502 iron_bars[east=false,north=true,south=false,waterlogged=false,west=true]
 scoreboard players add fuck= lobby 1
 execute if score fuck= lobby matches 2.. run scoreboard players set fuck= lobby 0
-execute if score fuck= lobby matches 0 positioned -565 16 539 run tp @e[type=boat,tag=lobbyBoat,distance=1..,nbt=!{Passengers:[]}] ~ ~ ~ 0 0
+execute if score fuck= lobby matches 0 positioned -565 16 539 run kill @e[type=boat,tag=lobbyBoat,distance=1..]
+execute if score fuck= lobby matches 0 positioned -565 16 539 unless entity @e[type=boat,tag=lobbyBoat,distance=1..] run summon boat ~ ~ ~ {Type:"acacia",Tags:["lobbyBoat"]}
 
 # Particles
 # Portal

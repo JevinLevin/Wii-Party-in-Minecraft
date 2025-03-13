@@ -44,3 +44,5 @@ bossbar set minecraft:21redtimer players
 bossbar set minecraft:21greentimer players
 bossbar set minecraft:21orangetimer players
 bossbar set minecraft:21spectimer players
+
+title @a actionbar ""

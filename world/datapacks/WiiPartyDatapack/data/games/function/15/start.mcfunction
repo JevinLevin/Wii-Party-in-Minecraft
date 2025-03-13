@@ -25,10 +25,10 @@ tellraw @a[tag=playing] ""
 
 # Teleport all players to the minigame
 tp @a[tag=playing] 15944 19 16002 -90 0
-tp @a[tag=ingame,team=blue] 15944 20 16001.0 -90 0
-tp @a[tag=ingame,team=red] 15944 20 16002.0 -90 0
-tp @a[tag=ingame,team=green] 15944 20 16003.0 -90 0
-tp @a[tag=ingame,team=orange] 15944 20 16004.0 -90 0
+tp @a[tag=ingame,team=blue] 15944 19 16001.0 -90 0
+tp @a[tag=ingame,team=red] 15944 19 16002.0 -90 0
+tp @a[tag=ingame,team=green] 15944 19 16003.0 -90 0
+tp @a[tag=ingame,team=orange] 15944 19 16004.0 -90 0
 execute as @a[tag=playing] at @s run tp @s @s
 execute as @a[tag=playing] at @s run tp @s @s
 execute as @a[tag=playing] at @s run tp @s @s

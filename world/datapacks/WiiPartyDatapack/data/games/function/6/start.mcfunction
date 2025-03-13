@@ -59,3 +59,5 @@ ride @a[team=orange,tag=ingame,limit=1,nbt={}] mount @e[type=horse,tag=orangehor
 
 scoreboard objectives add 6timer dummy
 scoreboard players set @a 6timer 0
+
+execute as @a[tag=ingame] run attribute @s player.entity_interaction_range base set 0.5

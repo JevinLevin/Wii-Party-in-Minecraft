@@ -77,10 +77,10 @@ execute as @a[tag=ingame,scores={29score=8},team=red] run team modify displaylin
 execute as @a[tag=ingame,scores={29score=8},team=green] run team modify displayline5 prefix {"translate":"scoreboard.PearlPlunder.1","color":"green","with":[{"text":"8","color":"green","bold":true,"underlined":true}]}
 execute as @a[tag=ingame,scores={29score=8},team=orange] run team modify displayline2 prefix {"translate":"scoreboard.PearlPlunder.1","color":"gold","with":[{"text":"8","color":"gold","bold":true,"underlined":true}]}
 
-execute as @a[tag=ingame,scores={29score=9},team=blue] run team modify displayline11 prefix {"translate":"scoreboard.PearlPlunder.2","color":"#0088ff","with":[{"text":"9","color":"#0088ff","bold":true,"underlined":true}]}
-execute as @a[tag=ingame,scores={29score=9},team=red] run team modify displayline8 prefix {"translate":"scoreboard.PearlPlunder.2","color":"red","with":[{"text":"9","color":"red","bold":true,"underlined":true}]}
-execute as @a[tag=ingame,scores={29score=9},team=green] run team modify displayline5 prefix {"translate":"scoreboard.PearlPlunder.2","color":"green","with":[{"text":"9","color":"green","bold":true,"underlined":true}]}
-execute as @a[tag=ingame,scores={29score=9},team=orange] run team modify displayline2 prefix {"translate":"scoreboard.PearlPlunder.2","color":"gold","with":[{"text":"9","color":"gold","bold":true,"underlined":true}]}
+execute as @a[tag=ingame,scores={29score=9},team=blue] run team modify displayline11 prefix {"translate":"scoreboard.PearlPlunder.1","color":"#0088ff","with":[{"text":"9","color":"#0088ff","bold":true,"underlined":true}]}
+execute as @a[tag=ingame,scores={29score=9},team=red] run team modify displayline8 prefix {"translate":"scoreboard.PearlPlunder.1","color":"red","with":[{"text":"9","color":"red","bold":true,"underlined":true}]}
+execute as @a[tag=ingame,scores={29score=9},team=green] run team modify displayline5 prefix {"translate":"scoreboard.PearlPlunder.1","color":"green","with":[{"text":"9","color":"green","bold":true,"underlined":true}]}
+execute as @a[tag=ingame,scores={29score=9},team=orange] run team modify displayline2 prefix {"translate":"scoreboard.PearlPlunder.1","color":"gold","with":[{"text":"9","color":"gold","bold":true,"underlined":true}]}
 
 execute as @a[tag=ingame,scores={29score=10},team=blue] run team modify displayline11 prefix {"translate":"scoreboard.PearlPlunder.2","color":"#0088ff","with":[{"text":"10","color":"#0088ff","bold":true,"underlined":true}]}
 execute as @a[tag=ingame,scores={29score=10},team=red] run team modify displayline8 prefix {"translate":"scoreboard.PearlPlunder.2","color":"red","with":[{"text":"10","color":"red","bold":true,"underlined":true}]}

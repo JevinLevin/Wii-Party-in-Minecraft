@@ -67,3 +67,5 @@ ride @a[team=green,tag=ingame,limit=1,nbt={RootVehicle:{}}] dismount
 ride @a[team=orange,tag=ingame,limit=1,nbt={RootVehicle:{}}] dismount
 
 kill @e[type=interaction,tag=6interact]
+
+execute as @a run attribute @s player.entity_interaction_range base set 3.0

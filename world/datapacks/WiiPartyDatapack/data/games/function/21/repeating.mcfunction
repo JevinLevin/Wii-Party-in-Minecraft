@@ -34,7 +34,7 @@ execute if score ingame= 21scores matches 0..2 as @e[type=armor_stand,tag=21pers
 execute if score ingame= 21scores matches 0..3 positioned 30065 12 29993 run tp @a[tag=ingame,distance=0.5..] ~ ~ ~ 90 0
 
 # Scroll zooming
-execute if score ingame= 21scores matches 0..2 as @a[tag=ingame] run function games:21/zoom_check
+execute if score ingame= 21scores matches 0..3 as @a[tag=ingame] run function games:21/zoom_check
 # Title for scrolling
 title @a[tag=ingame,team=blue] actionbar {"color":"#0088ff","translate":"game.MazeDaze.Scroll"}
 title @a[tag=ingame,team=red] actionbar {"color":"red","translate":"game.MazeDaze.Scroll"}
