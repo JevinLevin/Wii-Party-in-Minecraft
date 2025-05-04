@@ -1,4 +1,4 @@
-execute store result score random= 21scores run random value 1..117
+execute store result score random= 21scores run random value 1..118
 
 execute if score random= 21scores matches 1 run data modify storage games:21 Person[3].components."minecraft:profile".name set value "McTsts"
 execute if score random= 21scores matches 2 run data modify storage games:21 Person[3].components."minecraft:profile".name set value "Roudium"
@@ -117,3 +117,4 @@ execute if score random= 21scores matches 114 run data modify storage games:21 P
 execute if score random= 21scores matches 115 run data modify storage games:21 Person[3].components."minecraft:profile".name set value "P2ime"
 execute if score random= 21scores matches 116 run data modify storage games:21 Person[3].components."minecraft:profile".name set value "Lemenia_Manilu"
 execute if score random= 21scores matches 117 run data modify storage games:21 Person[3].components."minecraft:profile".name set value "Lachy_Balboa"
+execute if score random= 21scores matches 118 run data modify storage games:21 Person[3].components."minecraft:profile".name set value "Deondeminecraft"

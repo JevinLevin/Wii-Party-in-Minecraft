@@ -136,7 +136,7 @@ setblock -555 10 517 air
 setblock -555 10 517 lectern[facing=west,has_book=true]{Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{title:"",author:"",pages:['[{"color":"dark_gray","bold":true,"translate":"lobby.Translations.Language.French"},{"text":"\\n\\n"},{"bold":false,"text":"Klexium\\nrainbowyoshi\\nnervarze\\ngaming_rb"}]']}}}} replace
 # Dutch
 setblock -564 10 524 air
-setblock -564 10 524 lectern[facing=north,has_book=true]{Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{title:"",author:"",pages:['[{"color":"dark_gray","bold":true,"translate":"lobby.Translations.Language.Dutch"},{"text":"\\n\\n"},{"bold":false,"text":"Piemelpiraat (dv10)\\nrobbertjan"}]']}}}} replace
+setblock -564 10 524 lectern[facing=north,has_book=true]{Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{title:"",author:"",pages:['[{"color":"dark_gray","bold":true,"translate":"lobby.Translations.Language.Dutch"},{"text":"\\n\\n"},{"bold":false,"text":"Piemelpiraat (dv10)\\nrobbertjan"},{"text":"\\n\\n"},{"color":"dark_gray","bold":true,"text":"Limburgish"},{"text":"\\n\\n"},{"bold":false,"text":"deonm2009"}]']}}}} replace
 # Bulgarian
 setblock -564 9 509 air
 setblock -564 9 509 lectern[facing=west,has_book=true]{Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{title:"",author:"",pages:['[{"color":"dark_gray","bold":true,"translate":"lobby.Translations.Language.Bulgarian"},{"text":"\\n\\n"},{"bold":false,"text":"boborozo"}]']}}}} replace
@@ -152,6 +152,10 @@ setblock -568 10 502 lectern[facing=south,has_book=true]{Book:{id:"minecraft:wri
 # Korean
 setblock -572 10 501 air
 setblock -572 10 501 lectern[facing=south,has_book=true]{Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{title:"",author:"",pages:['[{"color":"dark_gray","bold":true,"translate":"lobby.Translations.Language.Korean"},{"text":"\\n\\n"},{"bold":false,"text":"StationAlpha"}]']}}}} replace
+# Hindi
+setblock -558 9 510 air
+setblock -558 9 510 lectern[facing=west,has_book=true]{Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{title:"",author:"",pages:['[{"color":"dark_gray","bold":true,"text":"Hindi"},{"text":"\\n\\n"},{"bold":false,"text":"deonm2009"}]']}}}} replace
+
 
 # Graph
 tp @e[tag=lobbyGraph] 0 -150 0

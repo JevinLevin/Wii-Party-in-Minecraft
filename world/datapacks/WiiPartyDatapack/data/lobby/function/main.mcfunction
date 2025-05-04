@@ -162,7 +162,8 @@ execute positioned -577 12 502 if block ~ ~ ~ air unless entity @a[tag=arg,dista
 scoreboard players add fuck= lobby 1
 execute if score fuck= lobby matches 2.. run scoreboard players set fuck= lobby 0
 execute if score fuck= lobby matches 0 positioned -565 16 539 run kill @e[type=boat,tag=lobbyBoat,distance=1..]
-execute if score fuck= lobby matches 0 positioned -565 16 539 unless entity @e[type=boat,tag=lobbyBoat,distance=1..] run summon boat ~ ~ ~ {Type:"acacia",Tags:["lobbyBoat"]}
+execute if score fuck= lobby matches 0 positioned -565 16 539 unless entity @e[type=boat,tag=lobbyBoat,distance=..1] run summon boat ~ ~ ~ {Type:"acacia",Tags:["lobbyBoat"]}
+
 
 # Particles
 # Portal
