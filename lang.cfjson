@@ -396,6 +396,7 @@
     "game.SpotlightFightName": "Spotlight Fight",
     "game.SpaceBrawlName": "Space Brawl",
     "game.CommuterCountName": "Commuter Count",
+    "game.LoftyLeapName": "Lofty Leap",
 
     # Scoreboard Icons
     @skip
